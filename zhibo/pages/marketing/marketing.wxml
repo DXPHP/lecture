@@ -1,0 +1,101 @@
+<!--pages/marketing/marketing.wxml-->
+<view class='topTabSwiper back font-size15 font-wei15 box-shadow'>
+    <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}'  data-current = "0" bindtap='checkCurrent'>讲座介绍</view>
+    <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}'  data-current = "1" bindtap='checkCurrent'>讲座报名</view>
+    <view class='tab  {{currentData == 2 ? "tabBorer" : ""}}'  data-current = "2" bindtap='checkCurrent'>讲座名单</view>
+</view>
+<swiper current="{{currentData}}" class='swiper' style="height:1000px;" duration="300" bindchange="bindchange">
+<!-- 讲座介绍 -->
+  <swiper-item>
+     <view class='body'>  
+      <text class="title">讲座介绍:</text>
+      <view>
+      <text class="content">需要填写的信息：学院，班级，学号，电话。请同学们注意信息的正确性，如果发现报名成的乱填，填错，班级信息错误等将会取消讲座资格。
+        学院(简称):物电学院
+        班级(简称):物本XX班
+      </text>
+      </view>
+      </view> 
+       <view class='body'>  
+      <text class="title">主讲人简介:</text>
+      <view>
+      <text class="content">需要填写的信息：学院，班级，学号，电话。请同学们注意信息的正确性，如果发现报名成的乱填，填错，班级信息错误等将会取消讲座资格。
+        学院(简称):物电学院
+        班级(简称):物本XX班
+      </text>
+      </view>
+      </view> 
+  </swiper-item>
+  <!-- 讲座介绍end -->
+
+  <!-- 讲座报名 -->
+  <swiper-item>
+  <view class='body'>  
+    <text class="title">温馨提示:</text>
+    <view>
+    <text class="content">需要填写的信息：学院，班级，学号，电话。请同学们注意信息的正确性，如果发现报名成的乱填，填错，班级信息错误等将会取消讲座资格。
+      学院(简称):物电学院
+      班级(简称):物本XX班
+    </text>
+    </view>
+  </view> 
+  <view class='body'>
+
+    <form>
+    <view class='border-solid-radius overflow-hidden height90 flex-start margin-bottom20'>
+        <view class='padding020'>学院</view> 
+        <input class='' placeholder="请输入学院"/>
+      </view>
+      <view class='border-solid-radius overflow-hidden height90 flex-start margin-bottom20'>
+        <view class='padding020'>班级</view> 
+        <input class='' placeholder="请输入班级"/>
+      </view>
+
+      <view class='border-solid-radius overflow-hidden height90 flex-start margin-bottom20'>
+        <view class='padding020'>学号</view> 
+        <input class='' type="number" placeholder='请输入学号'/>
+      </view>
+
+      <view class='border-solid-radius overflow-hidden height90 flex-start margin-bottom20'>
+        <view class='padding020'>电话</view> 
+        <input class='' placeholder="请输入电话"/>
+      </view>
+
+      <view wx:if="{{status ==0}}"> 
+        <button class='backC colorF margin-top20' bindtap='clickPaymenEnd'>立即报名</button> 
+        </view>
+      <view wx:elif="{{status ==1}}">
+        <button class=' backC colorF margin-top20 back191' >人数已满</button>  
+      </view>
+      <view wx:else> 
+        <button class=' backC colorF margin-top20 back191' >报名截止</button>
+      </view>
+        
+    </form>
+  </view>
+  </swiper-item>
+  <!-- 讲座报名end -->
+  <!-- 讲座名单 -->
+   <swiper-item>
+    <view class='swiper_con padding2020'>
+            <view class=' back border-solid-radius overflow-hidden margin-top20'>
+        <view class='height280'  bindtap='clickManpowerContent'>
+          <image src='/img/image22.png'></image>
+        </view>
+        <view class='overflow-hidden padding3030 positionR'>
+          <view class='float-left text-left'>
+            <view class='font-wei500 font-size14'>标题内容标题</view>
+            <view class='font-size12 colorFFF'>开课时间：2019/1/12 13:00-16:00</view>
+            <view class='font-size12 colorFFF'>北京市某某街道</view>
+            <view class='font-size12  font-wei500 margin-top10'>
+              活动费用：
+              <text class='font-size15 font-wei500 colorReb'>￥120.0</text>
+            </view>
+          </view>
+
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+  <!-- 讲座名单end -->
+</swiper>

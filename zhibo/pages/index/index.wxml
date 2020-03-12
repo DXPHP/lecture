@@ -1,0 +1,78 @@
+<!--index.wxml-->
+<view class='indexSwiper'>
+<swiper indicator-dots="true" indicator-color="white" autoplay="true" class='swiperStyle banner'>
+  <swiper-item>
+      <image src="/img/banner1.jpg" class=""/>
+  </swiper-item>
+  <swiper-item>
+      <image src="/img/banner2.jpg" class=""/>
+  </swiper-item>
+  <swiper-item>
+      <image src="/img/test1.png" class=""/>
+  </swiper-item>
+</swiper>
+</view>
+
+<view class='tab-nav'> 
+  <view class='tab-nav-item' bindtap="scanCode">
+    <image src='../../img/image1.png'></image>
+    <view>签到</view>
+  </view>
+    <view class='tab-nav-item' bindtap="clickAdvisory">
+      <image src='../../img/image2.png'></image>
+    <view>咨询</view>
+  </view>
+    <view class='tab-nav-item' bindtap="clickCase">
+    <image src='../../img/image3.png'></image>
+    <view>案例</view>
+  </view>
+    <view class='tab-nav-item' bindtap="applyCourse">
+      <image src='../../img/image4.png'></image>
+    <view>讲座申请</view>
+  </view>
+   
+</view>
+
+<view class='new-wraper'>
+  <image src='/img/new-wraper.png'></image>
+  <view class='new-content'>{{newContent}}</view>
+</view>
+
+
+<swiper  class='swiper' style="height:650rpx;" wx:for="{{coursesData2.courses2ContentList}}" wx:key="item"  >
+  <swiper-item bindtap='apply'>
+    <view class='swiper_con padding2020'>
+      <view class=' back border-solid-radius overflow-hidden'>
+        <view class='height280'>
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class='overflow-hidden padding3030 positionR'>
+          <view class='float-left text-left'>
+            <view class='font-wei500 font-size14'>{{item.courses2Title}}</view>
+            <view class='font-size12 colorFFF'>讲座时间:{{item.contentTime}}</view>
+            <!-- <view class='font-size12 colorFFF'>讲座地点:{{item.address}}</view> -->
+            <view class='font-size12 colorFFF'>报名时间:{{item.regTime}}</view>
+            <!-- <view class='font-size12 colorFFF'>抢座人数:{{item.number}}</view> -->
+            <view class='font-size12 colorFFF'>主讲人:{{item.speaker}}</view>
+          </view>
+
+          <view wx:if="{{item.status ==0}}"> 
+           <button class=' float-right buttonPR backC colorF' >立即报名</button> 
+           </view>
+          <view wx:elif="{{item.status ==1}}">
+            <button class=' float-right buttonPR back191 colorF' >人数已满</button>  
+          </view>
+          <view wx:else> 
+           <button class=' float-right buttonPR back191 colorF' >报名截止</button>
+           </view>
+        </view>
+      </view>
+
+ 
+
+    </view>
+  </swiper-item>
+</swiper>
+
+
+<include src="/pages/CustomerMessage/CustomerMessage" />

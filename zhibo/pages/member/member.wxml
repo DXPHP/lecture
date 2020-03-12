@@ -1,0 +1,42 @@
+<!--pages/member/member.wxml-->
+<view class='height280 backC margin-bottom120'>
+  <view class='margin2 height320 back border-radius6 padding4040 memberHead'>
+    <view class='text-align border-bottom font-size18'>
+        <view class='font-wei font-size26'>12/15</view>
+        <view class='font-size18 margin-bottom20 title-con'>当前讲座完成进度</view>
+    </view>
+    <view class='flex-between margin-top20  font-size14'>
+     
+      <view class='text-align'>
+        <view class='colorBlue font-wei'>13</view>
+        <view class=''>讲座数量</view>
+      </view>
+      <view class='text-align'>
+        <view class='colorBlue font-wei'>2</view>
+        <view class=''>论文数量</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='margin2'>
+  <view class='flex-between margin20 sy-title'>
+    <text class='font-wei'>讲座记录</text>
+  </view>
+
+  <view class='margin-bottom20'>
+
+    <view class='graduata-item back border-radius6 overflow-hidden margin-bottom20' bindtap='clickMemberContent'>
+      <view class='width333 height180 float-left padding2020'>
+        <image src='/img/image22.png'></image>
+      </view>
+      <view class='float-left right-text padding2020 width666'>
+        <view class='font-wei font-size16 ac-tit'>讲座标题</view>
+        <view class='font-size12 colorFFF ac-time'>2019/1/12 13:00-16:00</view>
+        <view class='font-size12 colorFFF ac-num'>主讲人:XXX</view>
+      </view>
+    </view>
+
+  </view>
+
+</view>

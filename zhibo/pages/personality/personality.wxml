@@ -1,0 +1,30 @@
+<!--pages/personality/personality.wxml-->
+<view class='height120 back flex-between padding020 font-size16 margin-top20'>
+  <view class='left-info'>头像</view>
+    <view class="user-head">      
+      <view  class="user-pho-min float-left">
+        <open-data type='userAvatarUrl'></open-data>
+      </view>
+    </view>
+</view>
+
+<view class='height120 back flex-between padding020 font-size16 margin-top20'>
+  <view class='left-info'>昵称</view>
+  <view>哈哈</view>
+</view>
+
+<view class='height120 back flex-between padding020 font-size16 margin-top20' bindtap='clickRealName'>
+  <view class='left-info'>学号</view>
+  <view>20144432324 </view>
+</view>
+<view class='height120 back flex-between padding020 font-size16 margin-top20'>
+  <view class='left-info'>性别</view>
+  <view>男 </view>
+</view>
+
+<view class='height120 back flex-between padding020 font-size16 margin-top20'>
+  <view class='left-info'>签名</view>
+  <view>哈哈哈啦啦啦 </view>
+</view>
+
+<button class='backC margin-top180 width80 colorF'>保存</button>

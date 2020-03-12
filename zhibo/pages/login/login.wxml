@@ -1,0 +1,39 @@
+<view class="container"> 
+ 
+ 
+  <view class="login-from"> 
+ 
+    <!--账号-->
+    <view class="inputView"> 
+      <image class="nameImage" src="/img/user.png"></image> 
+      <label class="loginLab">账号</label> 
+      <input class="inputText" placeholder="请输入账号" type="number" bindinput="phoneInput" /> 
+    </view> 
+    <view class="line"></view> 
+    <!--密码-->
+    <view class="inputView"> 
+      <image class="keyImage" src="/img/lock.png"></image> 
+      <label class="loginLab">密码</label> 
+      <input class="inputText" password="true" placeholder="请输入密码" bindinput="passwordInput" /> 
+    </view> 
+    <view class="radio">
+    
+        <radio-group bindchange="radiochange">
+          学生 :<radio value='1'  color='#466AF8'></radio>
+          教师 :<radio value='2' color='#466AF8'></radio>
+        </radio-group>
+    </view>
+    
+    <!--按钮-->
+    <view class="loginBtnView"> 
+      <button class="loginBtn" type=""   bindtap="login">登录</button> 
+    </view>
+    
+ 
+  </view> 
+ 
+</view>
+ 
+<view class = 'success' wx:if="{{success}}">
+  <web-view src="{{text}}"></web-view>
+</view>

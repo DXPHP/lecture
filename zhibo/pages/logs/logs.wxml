@@ -1,0 +1,4 @@
+<!--logs.wxml-->
+
+
+<web-view src="http://www.chair.com/index.php/api/index/order"></web-view>

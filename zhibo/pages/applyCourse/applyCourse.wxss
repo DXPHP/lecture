@@ -1,0 +1,40 @@
+/* pages/applyCourse/applyCourse.wxss */
+@import '../communal/communal.wxss';
+page{
+  background-color: #ccc;
+}
+.title{
+  font-size: 40rpx;
+  color: #111;
+  
+}
+.content{
+  font-size: 30rpx;
+  line-height: 50rpx;
+  left: 40rpx;
+  color: #808080;
+}
+.body{
+  line-height: 60rpx;
+  margin: 50rpx 20rpx;
+  padding: 20rpx 20rpx;
+  background-color: #FFF;
+  border-radius: 15px;
+  height: 1200rpx;
+}
+.padding020{
+  /* font-weight: bold; */
+  width: 150rpx;
+  font-size: 30rpx;
+}
+.margin-bottom20 input,textarea{
+  font-size: 25rpx;
+  padding-left: 20rpx;
+  background-color: #ccc;
+  border-radius: 10rpx;
+  height: 60rpx;
+  width: 450rpx;
+} 
+
+
+

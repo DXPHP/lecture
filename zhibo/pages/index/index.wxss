@@ -1,0 +1,189 @@
+/**index.wxss**/
+@import '../communal/communal.wxss';
+.indexSwiper{
+  padding: 20rpx 30rpx;
+  /**background:linear-gradient(0deg,rgba(67,100,247,1) 0%,rgba(111,177,252,1) 100%);**/
+}
+
+swiper{
+  width: 100%;
+  height: 300rpx;
+}
+
+.swiperStyle{
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+swiper image{
+width: 100%;
+height: 100%;
+border-radius: 6px;
+}
+.tab-nav{
+  display: flex;
+  flex-direction:row;
+  justify-content:space-around;
+  flex-wrap: wrap;
+}
+.tab-nav-item{
+  width: 25%;
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 25rpx;
+}
+.tab-nav-item image{
+  width: 148rpx;
+  height: 148rpx;
+}
+
+.new-wraper{
+  position: relative;
+  width: 100%;
+  height: 182rpx;
+}
+.new-wraper>image{
+  left:-10px;
+  width:100%;
+  height: 150rpx;
+  position: absolute;
+  z-index: -1;
+}
+.new-body{
+  display: flex;
+  border-radius: 8px;
+  box-shadow: 0rpx 1rpx 18rpx  2rpx rgba(67, 100, 247, 0.2);
+}
+.new-title{
+  width: 30%;
+  height: 120rpx;
+  background: linear-gradient(to right,rgba(67, 100, 247, 1),rgba(111, 177, 252, 1));
+  border-radius: 6px 0 0 6px;
+  text-align: center;
+  line-height: 120rpx;
+  color: white;
+  font-weight:400;
+  font-size: 18px;
+}
+.new-content{
+  position: absolute;
+  top: 50rpx;
+  right: 50rpx;
+  width: 440rpx;
+  max-height: 84rpx;
+  font-size: 12px;
+  line-height: 21px;
+  color: rgba(51, 51, 51, 1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.new-content1{
+  position: relative;
+  width: 70%;
+  font-size:12px;
+  padding:0 20rpx;
+  box-sizing: border-box;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+  line-height:21px;  
+}
+.new-content::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  margin-top: -20rpx;
+  left: -40rpx;
+  width: 0;
+  height: 0;
+  border-width: 20rpx;
+  border-style:solid;
+  border-color: transparent white transparent transparent;
+}
+.nowSignBody{
+  width: 486rpx;
+  height: 536rpx;
+  background-color: rgba(255,255,255,1)
+}
+.nowSign{
+  width: 246rpx;
+  height: 50rpx;
+}
+.nowSignBut{
+  width:408rpx;
+  height: 80rpx;
+  font-size: 15px;
+}
+.signSuccessBody{
+  width: 486rpx;
+  height: 424rpx;
+}
+.signSuccess{
+  width: 170rpx;
+  height: 188rpx;
+}
+.singText{
+  font-size:18px;
+  line-height: 21px; 
+}
+button::after {
+  border: none
+}
+
+@import '../templates/courses.wxss';
+
+
+.tab {
+  float: left;
+  width: 50%;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+ 
+.topTabSwiper {
+  position: relative;
+  color: #979797;
+  border-top: 1px solid #ccc;
+  zoom: 1;
+}
+ 
+.topTabSwiper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.topTabSwiper::before{
+  position: absolute;
+  content: "";
+  height: 45rpx;
+  left: 50%;
+  top: 25%;
+  border-left: 1px solid #466AF8;
+}
+ 
+.tabBorer {
+  position: relative;
+  color: #466AF8;
+}
+.tabBorer::after{
+  content: "";
+  width: 110rpx;
+  border-bottom:6rpx solid #466AF8;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -55rpx;
+  border-radius: 10px;
+}
+ 
+.swiper {
+  width: 100%;
+}
+ 
+.swiper_con {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}

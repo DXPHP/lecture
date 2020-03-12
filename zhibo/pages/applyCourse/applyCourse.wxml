@@ -1,0 +1,50 @@
+<!--pages/applyCourse/applyCourse.wxml-->
+
+
+
+<view class='body'>
+
+  <form>
+   <view class='border-solid-radius overflow-hidden height90 flex-start margin-bottom20'>
+      <view class='padding020'>讲座题目</view> 
+      <input class='' placeholder=""/>
+    </view>
+    <view class='border-solid-radius overflow-hidden height90 flex-start margin-bottom20'>
+      <view class='padding020'>主讲人</view> 
+      <input class='' placeholder=""/>
+    </view>
+
+    <view class='border-solid-radius overflow-hidden height90 flex-start margin-bottom20'>
+      <view class='padding020'>时间</view> 
+      <!-- <input class='' type="date" placeholder=''/> -->
+       <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <input value='{{time}}' placeholder='选择时间'/>
+  </picker>
+
+    </view>
+
+    <view class='border-solid-radius overflow-hidden height90 flex-start margin-bottom20'>
+      <view class='padding020'>地点</view> 
+      <input class='' placeholder=""/>
+    </view>
+
+      <view class='border-solid-radius overflow-hidden height90 flex-start margin-bottom20'>
+      <view class='padding020'>面向对象</view> 
+      <input class='' placeholder=""/>
+    </view>
+
+      <view class='border-solid-radius overflow-hidden height200 flex-start margin-bottom20'>
+      <view class='padding020'>主讲人简介</view> 
+      <textarea  style="height:200rpx;" ></textarea>
+    </view>
+
+      <view class='border-solid-radius overflow-hidden height200 flex-start margin-bottom20'>
+      <view class='padding020'>内容简介</view> 
+      <!-- <input class='' placeholder=""/> -->
+      <textarea  style="height:200rpx;" ></textarea>
+    </view>
+    
+    <button class='btn backC colorF margin-top30' bindtap='clickPaymenEnd'>保存</button>
+    
+  </form>
+</view>

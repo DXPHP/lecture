@@ -1,0 +1,88 @@
+/* pages/marketing/marketing.wxss */
+@import '../communal/communal.wxss';
+@import '../templates/courses.wxss';
+page{
+  background-color: #F3F3F3;
+}
+
+.tab {
+  float: left;
+  width: 33%;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+ 
+.topTabSwiper {
+  position: relative;
+  color: #979797;
+  border-top: 1px solid #ccc;
+  zoom: 1;
+}
+ 
+.topTabSwiper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+ 
+.tabBorer {
+  position: relative;
+  color: #466AF8;
+}
+.tabBorer::after{
+  content: "";
+  width: 110rpx;
+  border-bottom:6rpx solid #466AF8;
+  position: absolute;
+  left: 33%;
+  bottom: 0;
+  margin-left: -10rpx;
+  border-radius: 10px;
+}
+ 
+.swiper {
+  width: 100%;
+}
+ 
+.swiper_con {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+.title{
+  font-size: 40rpx;
+  color: #111;
+  
+}
+.content{
+  font-size: 30rpx;
+  line-height: 50rpx;
+  left: 40rpx;
+  color: #808080;
+}
+.body{
+  line-height: 60rpx;
+  margin: 50rpx 20rpx;
+  padding: 20rpx 20rpx;
+  background-color: #FFF;
+  border-radius: 15px;
+}
+.padding020{
+  /* font-weight: bold; */
+  font-size: 30rpx;
+}
+.margin-bottom20 input{
+  font-size: 30rpx;
+  padding-left: 30rpx;
+  background-color: #FFF;
+  border-radius: 10rpx;
+} 

@@ -1,0 +1,18 @@
+/* pages/projectAll/projectAll.wxss */
+/* pages/marketing/marketing.wxss */
+@import '../communal/communal.wxss';
+@import '../templates/courses.wxss';
+page{
+  background-color: #F3F3F3;
+}
+
+.search{
+  height: 80rpx;
+  width: 95%;
+  margin-left: 2.5%;
+  background-color: #ccc;
+  border-radius: 25rpx;
+}
+.search input{
+  margin: 20rpx 20rpx;
+}
